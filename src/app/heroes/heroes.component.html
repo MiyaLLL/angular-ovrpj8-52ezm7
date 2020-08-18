@@ -1,0 +1,14 @@
+<h2>My Heroes</h2>
+<ul class="heroes">
+	<!-- [class.aaa]="hero === selectedHero"  -->
+	<!-- [ngClass]="classFlag?'aaa':'bbb'" -->
+	<!-- class="className" -->
+	<li *ngFor="let hero of heroes" [ngClass]="classFlag?'aaa':'bbb'" (click)="onSelect(hero)">
+		<a routerLink="/detail/{{hero.id}}">
+			<td class="id">{{hero.id}}</td>
+			<td class="name">{{hero.name}}</td>
+		</a>
+	</li>
+</ul>
+
+<!-- <app-hero-detail [hero]="selectedHero"></app-hero-detail> -->

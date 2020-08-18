@@ -1,0 +1,22 @@
+.heroes{
+  font-size: 20px;
+}
+.heroes .id{
+  background-color: yellow;
+}
+
+.heroes .name{
+  background-color: red;
+}
+
+.aaa {
+  color: pink;
+}
+
+.selected {
+  color: green;
+}
+
+.bbb {
+  color: blue;
+}
