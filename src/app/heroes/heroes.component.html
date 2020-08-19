@@ -8,7 +8,20 @@
 			<td class="id">{{hero.id}}</td>
 			<td class="name">{{hero.name}}</td>
 		</a>
+		<button class="delete" title="delete hero" (click)="delete(hero)">x</button>
 	</li>
 </ul>
 
 <!-- <app-hero-detail [hero]="selectedHero"></app-hero-detail> -->
+
+<div>
+	<label>Hero name:
+    <input #heroName />
+  </label>
+	<!-- (click) passes input value to add() and then clears the input -->
+	<button (click)="add(heroName.value); heroName.value=''">
+    add
+  </button>
+</div>
+
+<app-hero-search></app-hero-search>
